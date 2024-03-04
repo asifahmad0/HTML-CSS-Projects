@@ -3,7 +3,10 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+}
 
+body{
+    background-color: #eeeeea;
 }
 
 .contenar{
@@ -35,13 +38,13 @@
     box-shadow: 0px 10px 30px -5px black;   
 }
 
-.card .row {
+.card > .row {
     display: flex;
     flex-wrap: nowrap;
 
 }
 
-.card .row .icon{
+.card > .row > .icon{
     background: #223;
     color: azure;
     border-radius: 50%;
@@ -57,7 +60,7 @@
     justify-content: center;
     flex-direction: column;
     overflow: hidden;
-    height: 80px;
+    height: 90px;
     width: 520px;
     opacity: 0;
     transform: translateY(30px);
@@ -65,8 +68,10 @@
 
 }
 .des p{
-    color: #b0b0ba;
+    color: #ffffff;
     padding: 5px;
+    font-weight: bold;
+    text-shadow: black;
 
 }
 .des h4{
@@ -79,6 +84,10 @@ input{
 input:checked + label{
     width: 600px;
     transform: translateX(0) !important;
+}
+input:checked + label .des{
+    opacity: 1 !important;
+    transform: translateY(0) !important;
 }
 
 .card[for="c1"]{
