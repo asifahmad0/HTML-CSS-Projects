@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAMADAN KAREAM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Ramadan</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Donate</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section id="sec">
+        <h2 id="text">Ramadan Kaream</h2>
+        <img src="assets/01.png" id="img1">
+        <img src="assets/02.png" id="img2">
+        <img src="assets/03.png" id="img3">
+        <img src="assets/04.png" id="img4">
+    </section>
+    <div class="scr">
+        <h2>Parallax Scrolling Effects</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, neque voluptatem perferendis omnis, iusto
+            ea veritatis necessitatibus repudiandae eaque odio quisquam mollitia corrupti dicta eveniet ipsam! Debitis
+            architecto totam dolore cupiditate nihil, quod porro quaerat voluptatum quae rem! Repellat dolorem accusamus
+            veritatis doloremque unde culpa ullam, illum, maiores aliquam corporis at, exercitationem sunt quisquam
+            necessitatibus iure eveniet rerum voluptas recusandae earum! Ad voluptatibus possimus, ipsa numquam ducimus
+            cumque esse adipisci id. Iste eveniet unde sit magni doloremque non, asperiores est modi eligendi deserunt
+            corrupti quaerat ducimus, illo esse aperiam quos blanditiis quidem vero suscipit laborum aspernatur
+            necessitatibus alias id! Excepturi nisi eaque officia sint amet est tenetur rem aspernatur tempora ea
+            dolores, qui sapiente at cumque esse, corporis,</br></br> in illo dolore et soluta ut? Atque nesciunt provident, minus
+            possimus quaerat ut maxime numquam voluptas similique accusantium ab labore porro ipsa minima totam tempore.
+            Saepe quos dolorem commodi laudantium molestiae rerum magni! Veniam, aspernatur? Sequi iure dolorem illo
+            eaque asperiores fuga et? Dolorum distinctio aspernatur debitis voluptates earum corrupti tempora, quis,
+            recusandae maiores quo, nobis eligendi sunt repellendus cum dolor ipsam quas! Nostrum dolorum tempore illum
+            reiciendis repellendus ipsa optio, libero voluptate ullam animi recusandae sapiente ea nobis dolore
+            perspiciatis adipisci, cum quos accusantium. Rerum, voluptas ullam nobis inventore amet ad sed. Qui debitis
+            aperiam facilis alias recusandae nulla laboriosam temporibus,</br></br> cum excepturi unde nisi veritatis numquam at
+            nesciunt cupiditate nam saepe enim, delectus tenetur quod? Perferendis ad, sunt nemo, deserunt earum
+            provident nisi dolorem laudantium quidem sit dignissimos quia? Necessitatibus, molestiae! Debitis omnis
+            facere et, dignissimos saepe nobis fuga assumenda dolorum! Aperiam minus autem ad illum magni maiores odit
+            labore, sit nobis. Vitae alias eveniet voluptas quod, velit mollitia eius praesentium placeat, facilis vel
+            eligendi a, consectetur sapiente repudiandae! Illo eveniet fugiat optio omnis. Perferendis aspernatur saepe
+            recusandae molestias omnis dolor eaque est harum, nihil optio nobis ducimus consequatur praesentium aliquid
+            eveniet quod minus quis dolorem ipsam repellat obcaecati nemo. Officiis, laudantium veniam? Quas maiores
+            illum officia quia suscipit quis fugiat,</br></br>br> rem necessitatibus quo laborum, architecto molestias cupiditate
+            fugit magnam accusantium facilis. Tempora, veniam eveniet quae nobis delectus alias. Veniam doloribus
+            quaerat officiis similique voluptas architecto vitae, molestias voluptate perferendis delectus enim
+            incidunt, porro inventore! Explicabo molestiae voluptate sit, asperiores totam impedit harum aperiam id sunt
+            animi enim rerum quasi inventore nostrum, omnis expedita dolorum earum odit culpa ullam esse. Modi, labore
+            tenetur at maiores pariatur, corporis nihil libero laboriosam ab sed ea dignissimos ullam quo aut, beatae
+            magnam tempora doloremque! Voluptates, veritatis accusantium? Placeat recusandae omnis iusto odio
+            exercitationem veritatis ratione ad voluptates harum eius adipisci, maiores quos eos quae debitis possimus
+            nostrum totam, officiis nihil dicta eveniet ducimus voluptatem quibusdam! Voluptate dolorum consectetur,
+            nostrum atque debitis, velit architecto voluptatum nisi repellat inventore reiciendis? Distinctio autem fuga
+            quaerat, pariatur deserunt error culpa ipsum perferendis dolore tempore consequatur aliquam nisi dolores
+            illo expedita eaque aperiam? Molestias dolor aspernatur itaque nostrum deleniti, exercitationem doloribus
+            error placeat illo officia odit ratione obcaecati fugit velit iure consequatur eum odio veritatis sunt quam
+            illum!</p>
+    </div>
+
+<script>
+    let text = document.getElementById('text');
+    let img1 = document.getElementById('img1');
+    let img2 = document.getElementById('img2');
+    let img3 = document.getElementById('img3');
+
+
+    window.addEventListener('scroll', function(){
+        let value = window.scrollY;
+        text.style.marginTop = value*-1.5+'px';
+        img1.style.top =value*0.75+'px';
+        img2.style.top =value*0.5+'px';
+        img3.style.top =value*0.25+'px';
+    })
+
+
+
+
+</script>
+
+</body>
+
+</html>
