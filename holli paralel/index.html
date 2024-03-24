@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Holi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="head">
+        <a href="#" id="logo">Fastivle</a>
+        <ul>
+            <li><a href="http://" id="active">Home</a></li>
+            <li><a href="http://">Service</a></li>
+            <li><a href="http://">Blog's</a></li>
+            <li><a href="http://">Contacts</a></li>
+        </ul>
+    </header>
+    <section id="main">
+        <img src="assets/baloon1.png" id="baloon1">
+        <img src="assets/baloon2.png" id="baloon2">
+        <img src="assets/baloon3.png" id="baloon3">
+        <img src="assets/bg.png" id="bg">
+        <img src="assets/color1.png" id="color1">
+        <img src="assets/color2.png" id="color2">
+        <img src="assets/decoration1.png" id="decoration1">
+        <img src="assets/decoration2.png" id="decoration2">
+        <img src="assets/splash.png" id="splash">
+        <img src="assets/text.png" id="htext">
+        <img src="assets/watergun1.png" id="watergun1">
+        <img src="assets/watergun2.png" id="watergun2">
+    </section>
+    <div class="scr">
+        <h2>Holi Parallax Website</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, illo quam? A eligendi, eos officia, minima
+            unde inventore sequi animi deserunt delectus possimus excepturi dicta similique nisi mollitia nesciunt
+            exercitationem voluptate quibusdam? Quisquam illo nam qui dignissimos deleniti autem eaque itaque et
+            asperiores voluptas, incidunt eveniet in quia accusamus ipsum quaerat assumenda sint doloribus quo
+            voluptates cum vero laborum repellat totam? Eum facilis nulla cum aperiam deleniti eaque, quae soluta
+            quibusdam quaerat? Explicabo sit quibusdam dolorem corporis quo modi praesentium, magni fugiat tenetur odio,
+            dolore, dolor consequuntur enim deserunt tempora. Aperiam rem esse modi atque quia a tempora ad, tenetur eos
+            eligendi nemo expedita minus repellat magni ipsum odit voluptates quam dolorem optio. Alias beatae quia
+            explicabo ab velit iste animi esse minima recusandae distinctio sit temporibus dolorum molestiae atque
+            perferendis veniam dolorem aliquam, quas mollitia delectus optio totam? Consectetur commodi at assumenda
+            consequuntur placeat libero accusamus, quae quam nihil sint atque quaerat cum non aliquid sapiente maiores
+            aperiam reiciendis quas facilis corporis repellat minus doloribus adipisci corrupti. Repudiandae numquam
+            quibusdam molestias. Dolorem ipsum quis, fuga consectetur quidem eius distinctio soluta rem architecto
+            assumenda, pariatur neque magnam cum minus dolores minima temporibus porro similique. Facere minima, sint ut
+            saepe nesciunt quidem iste nulla, corrupti officiis pariatur cupiditate nam excepturi? Sapiente iure, enim
+            illo, rem doloribus modi nobis amet veritatis explicabo nostrum eligendi neque reprehenderit, obcaecati
+            excepturi asperiores a magnam sint quae fuga expedita! Accusamus provident quidem reiciendis officia eveniet
+            dolorum corporis adipisci sunt tempora esse. Magni nesciunt, fugiat esse impedit animi placeat eligendi
+            delectus cupiditate dolorum tempore cum quaerat quibusdam commodi veniam iste, minus neque aperiam. Eaque
+            porro sequi repellendus, atque consequatur deserunt ab voluptatem, earum animi consectetur libero nostrum
+            est. Et sint cum veritatis officia consequuntur? Labore recusandae, quos molestias nulla debitis laboriosam
+            vero odio tempore vel beatae magnam. Accusantium fugiat inventore ipsam ullam facilis totam vero aperiam
+            placeat a fugit quae minus laboriosam, amet dolor accusamus rem beatae suscipit rerum fuga eligendi. Illo
+            esse numquam ab id animi commodi, temporibus quae debitis quod beatae neque consequatur saepe voluptate
+            dolorum minima dolor consectetur doloremque alias? Praesentium necessitatibus maxime voluptate ullam
+            accusantium magni inventore tempore, eos corporis, sit cumque! Repellat ipsum voluptates sint culpa! At
+            asperiores ipsum pariatur impedit explicabo assumenda excepturi veritatis maiores ratione nobis voluptatem
+            ipsam recusandae hic provident, beatae nesciunt mollitia? Ea recusandae nihil, saepe perspiciatis commodi,
+            vel tempora, neque laboriosam aperiam et totam magni eveniet cupiditate iusto optio incidunt voluptatibus
+            dolores porro explicabo quasi! Beatae vero ut rem cum nobis vitae inventore iste ratione reiciendis,
+            aspernatur magnam placeat totam sit, dolores libero quis esse ipsum, rerum culpa fuga. Deleniti at magnam
+            quidem nemo sed itaque dicta harum architecto ratione, ex placeat quos officiis vel aut possimus nihil eum
+            ducimus? Accusamus doloribus, maiores excepturi labore expedita assumenda nesciunt, illum ipsa provident ea
+            quae! Quaerat quia minus iste perferendis earum quasi, recusandae voluptatum, tenetur fuga, aperiam officiis
+            tempore unde nostrum impedit sapiente pariatur! Numquam animi, esse officia ex ratione magnam ducimus
+            aliquam quaerat distinctio aspernatur eligendi quis fugit?</p>
+    </div>
+
+    <script>
+        let baloon1=document.getElementById('baloon1');
+        let baloon2=document.getElementById('baloon2');
+        let baloon3=document.getElementById('baloon3');
+        let decoration1=document.getElementById('decoration1');
+        let htext=document.getElementById('htext');
+        let watergun1=document.getElementById('watergun1');
+        let watergun2=document.getElementById('watergun2');
+        let splash=document.getElementById('splash');
+        let color1=document.getElementById('color1');
+        let color2=document.getElementById('color2');
+
+        window.addEventListener('scroll', function(){
+            let value =window.scrollY;
+            splash.style.top = value * 0.75+'px';
+            decoration1.style.top = value * 0.5+'px';
+            htext.style.top = value * 0.25+'px';
+            baloon1.style.top = value * -3.25+'px';
+            baloon2.style.top = value * -0.5+'px';
+            baloon3.style.top = value * -2+'px';
+            color1.style.top = value * -0.25+'px';
+            color2.style.top = value * -0.75+'px';
+            watergun1.style.left = value * -0.75+'px';
+            watergun2.style.right = value * -0.75+'px';
+        });
+
+    </script>
+
+</body>
+
+</html>
