@@ -597,8 +597,10 @@ footer .form_contaner form #submit{
     bottom: 30px;
 }
 footer .form_contaner form #submit:hover{
-    background: 0 0 10px var(--bg1), 0 0 50px var(--bg1), 0 0 75px var(--bg1), 0 0 100px var(--bg1), 0 0 200px var(--bg1);
+    background:var(--bg1);
+    box-shadow: 0 0 10px var(--bg1), 0 0 50px var(--bg1), 0 0 75px var(--bg1), 0 0 100px var(--bg1), 0 0 200px var(--bg1);
 }
+
 
 
 footer .footer_contant{
