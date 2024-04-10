@@ -26,11 +26,11 @@ body{
 
 .card{
     width: 80px;
-    border-radius: .75rem;
+    /*border-radius: .75rem;*/
     background-size: cover;
     cursor: pointer;
     overflow: hidden;
-    border-radius: 2rem;
+    /*border-radius: 2rem;*/
     margin: 0 10px;
     display: flex;
     align-items: flex-end;

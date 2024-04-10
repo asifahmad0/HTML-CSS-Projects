@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    height: 100vh;
+    background-color: #08122e;
+    justify-content: center;
+}
+.btn2,
+.btn{
+    position: relative;
+    width: 150px;
+    height: 50px;
+    padding: 10px;
+    background-color: transparent;
+    margin-top: 20%;
+    color: white;
+    margin-left: 50px;
+    font-size: 24px;
+    align-items: center;
+    border: 2px solid #1cf109;
+    overflow: hidden;
+}
+span{
+    position: absolute;
+    width: 0;
+    height:50px;
+    left: 0;
+    top: 0;
+    background-color: #1cf109;
+    z-index: -1;
+}
+.btn:hover span{
+    width: 150px;
+    opacity: 1;
+    color: black;
+    transition: .7s;
+}
+.btn:hover{
+    color: black;
+}
+
+.btn2:hover{
+    background-color: #1cf109;
+        box-shadow: 0 0 5px #1cf109, 0 0 25px #1cf109, 0 0 50px #1cf109, 0 0 200px #1cf109;   
+
+}

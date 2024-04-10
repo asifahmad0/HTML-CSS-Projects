@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --width:75px;
+    --height:35px;
+    --bg:blue;
+
+}
+body{
+    width: 100vw;
+    height: 100vh;
+}
+.chackbox{
+    position: relative;
+    width: var(--width);
+    height: var(--height);
+}
+input{
+    visibility: hidden;
+}
+.chackbox label{
+    cursor: pointer;
+    position: absolute;
+    inset: 0 0 0 0;
+    background-color: #474545;
+    border-radius: 20px;
+    align-content: center;
+    display: block;
+    transition: background .1s;
+}
+.chackbox label::after{
+    position: absolute;
+    width: var(--height);
+    height: var(--height);
+    background-color: aliceblue;
+    content: "";
+    inset: 0 0 0 0;
+    place-content: 20px;
+    color: black;
+    text-align: center;
+    border-radius: 50%;
+    left: 0;
+    z-index: 1;
+    transition: left .3s;
+}
+.chackbox input:checked ~ label{
+    background-color: var(--bg);
+}
+.chackbox input:checked ~ label::after{
+    left: calc(100% - var(--height));
+}
+.box{
+    width: max-content;
+    margin-top: 250px;
+    margin-left: 500px;
+    background-color: aqua;
+    box-shadow: 0 20px 25px #474545;
+}
+.box h1{
+    word-spacing: 5px;
+    padding: 20px;
+}

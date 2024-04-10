@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chackbox">
+        <input class="check"  type="checkbox"  id="cb">
+        <label for="cb"></label>
+        <div class="box">
+            <h1></h1>
+            
+        </div>
+
+    </div>
+
+
+    <script>
+        let body= document.querySelector("body");
+        let checkbox= document.querySelector(".check");
+        let head= document.querySelector("h1");
+        let value = 0;
+
+        head.innerText="My Name Is Asif Ahmad."
+
+
+        checkbox.addEventListener("click", function(){
+
+            if(value == 0){
+                body.style.background="black";
+                body.style.color="white";
+                console.log("black ", value);
+                value=1;
+            }
+            else{
+                body.style.background="white";
+                body.style.color="black";
+                console.log("wehite ", value);
+                value = 0;
+            }
+        })
+    </script>
+</body>
+</html>
