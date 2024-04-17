@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="manu_btn">
+        <div class="manu_btn_burger"></div>
+    </div>
+    <div class="manu">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Home</a></li>
+        </ul>
+    </div>
+    <script>
+        let manu_btn = document.querySelector('.manu_btn');
+        let manu = document.querySelector('.manu');
+
+        manu_btn.addEventListener('click', function(){
+            manu_btn.classList.toggle('open');
+            manu.classList.toggle('open');
+
+        })
+    </script>
+</body>
+</html>
