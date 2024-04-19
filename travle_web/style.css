@@ -1,0 +1,546 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --bg1:rgb(13, 122, 165);
+    --font-color:white;
+    --border-color:rgb(35, 35, 90);
+    --font:cursive;
+    --shadow:rgb(46, 44, 44);
+    --hover:yellow;
+}
+html,
+body{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+display: none;}
+header{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+header video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    align-items: center;
+    z-index: -1;
+}
+
+header nav{
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    background:var(--bg1);
+    justify-content: space-between;
+    z-index: 1000;
+}
+header nav .logo{
+    width: 150px;
+    height: 50px;
+    object-fit: cover;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 10px;
+}
+
+header nav .logo h2{
+    color: var(--font-color);
+    padding: 5px 10px;
+    background: var(--bg1);
+    font-size: 1.5rem;
+    text-align: center;
+    align-items: center;
+    font-family: var(--font);
+}
+header nav .logo img{
+    width: 100px;
+    height: 50px;
+}
+
+header nav ul{
+    height: 50px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    text-align: center;
+    margin-right: 10px;
+    list-style: none;
+    font-family: var(--font);
+}
+header nav ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: var(--font-color);
+}
+header .head_text{
+    position: absolute;
+    width: 50%;
+    height: 40%;
+    top: 40%;
+    left: 10%;
+    padding: 20px;
+    
+}
+header .head_text h2{
+    color: var(--font-color);
+    font-size: 3rem;
+    font-family: var(--font);
+    margin-bottom: 20px;
+}
+header .head_text p{
+    font-size: 18px;
+    color: var(--font-color);
+
+}
+
+header .search_form_contaner{
+    position: absolute;
+    width: 80%;
+    height: 70px;
+    left: 10%;
+    bottom: -30px;
+    background:var(--border-color);
+    color: var(--font-color);
+    justify-content: space-between;
+    overflow: hidden;
+    z-index: 999;
+}
+header .search_form_contaner .search_form{
+    width: 100%;
+} 
+.search_form_contaner .search_form .form_data{
+    position: absolute;
+    display: flex;
+    width: 80%;
+    margin-left: 20px;
+    padding: 5px;
+    gap: 10px;
+    height: 100%;
+
+}
+.search_form_contaner .search_form .form_data .data input{
+    outline: none;
+    border: 1px solid var(--bg1);
+    padding: 5px;
+    background: transparent;
+    width: 150px;
+    color: var(--font-color);
+    height: 30px;
+}
+
+.search_form_contaner .search_form .form_data .data h1{
+    font-size: 16px;
+}
+.search_form_contaner .search_form #submit{
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    background: var(--bg1);
+    right: 0;
+    cursor: pointer;
+}
+/*----------------------------------main---------------------------------------------------*/
+main{
+    width: 100%;
+}
+
+/*---------------------------------------------offer-------------------------------------------------*/
+.offer{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    background: white;
+    padding-top: 50px;
+    object-fit: cover;
+}
+.offer img{
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+}
+.offer .offe_text{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(46, 44, 44, 0.5);
+}
+/*--------------------------------------------somthing--------------------------------------------------*/
+.something{
+    width: 100%;
+    height: 500px;
+    background-image: url(assets/6110100.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    padding-top: 55px;
+    background-size: 100% 70%;
+    background-color: white;
+}
+
+.something .text{
+    width: 500px;
+    height: 90%;
+    margin-top:0px;
+    margin-left: 60px;
+    box-shadow: 20px 10px 20px var(--shadow);
+    background: var(--bg1);
+    z-index: 999;
+}
+/*------------------------------------------------price tage-------------------------------------------------*/
+.card_contener{
+    width: 100%;
+    height: 550px;
+    background: #ffffff;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap:10px;
+    padding-bottom: 10px;
+}
+.card_contener h2{
+    font-size: 2rem;
+    padding: 10px;
+    font-family: var(--font);
+    padding-bottom: 20px;
+}
+.card_content{
+    width: 100%;
+    height: 450px;
+    display: flex;
+    background: #ffffff;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    gap:10px;
+    padding-bottom: 10px;
+}
+.card_content::-webkit-scrollbar{
+    display: none;
+}
+
+.card_content .card{
+    position: relative;
+    min-width: 300px;
+    height: 400px;
+    background: #ffffff;
+    border: 2px solid var(--border-color);
+    overflow: hidden;
+}
+.card_content .card .card_img{
+    position: absolute;
+    width: 100%;
+    height: 60%;
+    padding: 5px;
+    border-radius: 20px 20px 0 0;
+    overflow: hidden;
+}
+
+.card_content .card .card_img img{
+    width: 100%;
+    height: 100%;
+}
+.card_content .card .card_des{
+    position: absolute;
+    width: 100%;
+    height: 40%;
+    padding: 0px 10px;
+    bottom: 0;
+}
+.card_content .card .card_des h2{
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+.card_content .card .card_des ul :nth-last-child(1){
+font-weight: bold;
+}
+.card_content .card .card_des .btn{
+    padding: 10px 50px;
+    text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+    background-color: var(--bg1);
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/*------------------------------------------------map-------------------------------------------------*/
+
+.map{
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    text-align: center;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+/*---------------------------------------------------booking form-----------------------------------------------*/
+
+.booking_form{
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: var(--bg1);
+    display: flex;
+    font-family: var(--font);
+}
+.booking_form .form_img{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    object-fit: cover;
+}
+.booking_form .form_img img{
+    width: 100%;
+    height: 100%;
+}
+.booking_form .form_box{
+    width: 50%;
+    padding: 40px;
+    height: 100%;
+}
+.booking_form .form_box h2{
+    letter-spacing: 5px;
+    margin-left: 100px;
+    font-size: 2rem;
+    color: var(--border-color);
+    
+}
+
+.booking_form .form_box form{
+    display: flex;
+    flex-direction:column;
+    width: 400px;
+    height: 400px;
+    padding: 20px;
+    
+
+}
+.booking_form .form_box form input{
+    height: 30px;
+    margin-top: 10px;
+    font-weight: bolder;
+    border:2px solid var(--border-color);
+    text-align: center;  
+    outline: none; 
+    color: var(--font-color);
+    background: transparent;
+}
+.booking_form .form_box form input::placeholder{
+    color: var(--font-color);
+    font-family: var(--font);
+}
+.booking_form .form_box form textarea{
+    height: 100px;
+    margin-top: 10px;
+    font-weight: bolder;
+    outline: none;
+    border:2px solid var(--border-color);
+    color: var(--border-color);
+    text-align: center;
+    background: transparent;
+}
+.booking_form .form_box form textarea::placeholder{
+    color: #ffffff;
+    font-family: var(--font);
+    padding-top: 30px;
+    letter-spacing: 1px;
+}
+.booking_form .form_box form #book_btn{
+    height: 30px;
+    position: relative;
+    cursor: pointer;
+    margin-top: 20px;
+    background: transparent;
+    color: var(--font-color);
+    font-family: cursive;
+    letter-spacing: 2px;
+    outline: none;
+    font-weight: bolder;
+    border: 2px solid var(--border-color);
+    z-index: 1;
+}
+.booking_form .form_box form #book_btn span{
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--border-color);
+    z-index: -1;
+    transition: 0.5s ease-in-out;
+}
+.booking_form .form_box form #book_btn:hover span{
+    width: 100%;
+}
+
+/*----------------------------------About---------------------------------------------------*/
+main .about{
+    width: 100%;
+    height: 500px;
+    padding: 20px;
+    position: relative;
+    background: white;
+    border: 1px solid var(--font-color);
+    overflow: hidden;
+}
+main .about .left_side{
+    position: absolute;
+    left: 0;
+    width: 40%;
+    height: 90%;
+    padding: 50px;
+    object-fit: cover;
+    overflow: hidden;
+}
+main .about .left_side img{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    box-shadow: 20px 20px 20px var(--shadow);
+    object-fit: cover;
+}
+
+main .about .right_side{
+    position: absolute;
+    right: 0;
+    padding: 50px;
+    width: 60%;
+    height: 90%;
+    overflow: hidden;
+}
+main .about .right_side h1{
+font-size: 1.5rem;
+}
+main .about .right_side p{
+    font-size: 16px;
+}
+main .about .right_side button{
+    padding: 10px 20px;
+    position: absolute;
+    left: 6%;
+    bottom: 8%;
+    outline: none;
+    background: var(--bg1);
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+}
+main .about .right_side button:hover{
+    background-color: var(--bg1);
+    color: #ffffff;
+    box-shadow: 0 0 10px var(--bg1), 0 0 50px var(--bg1), 0 0 75px var(--bg1), 0 0 100px var(--bg1), 0 0 200px var(--bg1);
+}
+
+/*----------------------------------Footer Contact--------------------------------------------------*/
+footer{
+    position: relative;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    border: 2px solid var(--border-color);
+    background-color: #ffffff;
+}
+footer video{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -5;
+}
+footer .left_footer{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 2rem 1rem;
+    background: transparent;
+    z-index: 1;
+}
+footer .left_footer img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+footer .right_footer{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    float: right;
+    top: 0;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+    z-index: 1;
+}
+
+
+footer .right_footer h1{
+    text-align: center;
+    color: var(--bg1);
+    font-family: cursive;
+    font-size: 3rem;
+    margin-top: 100px;
+}
+footer .right_footer .contact{
+    display: flex;
+    flex-flow: column;
+    margin-top: 10px;
+}
+footer .right_footer a{
+    font-family: cursive;
+    margin-left: 10px;
+    margin-top: 20px;
+    color: var(--text-color);
+}
+footer .right_footer i{
+    margin-top: 50px;
+    text-decoration: none;
+    list-style: none;
+    color: var(--bg1);
+}
+footer .right_footer .social{
+    font-size: 2rem;
+}
+footer .right_footer .social a{
+    text-decoration: none;
+}
+footer .right_footer .social a i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+.copyright{
+    width: 100%;
+    height: max-content;
+    padding: 10px;
+    background: var(--bg1);
+
+}
+
+.copyright h2{
+    font-size: 18px;
+    letter-spacing: 3px;
+    word-spacing: 10px;
+    color: #ffffff;
+}
+
