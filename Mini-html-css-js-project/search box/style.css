@@ -1,0 +1,60 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 100%;
+    height:100vh;
+    background-color: rgb(255, 0, 0);
+}
+/*----------------------------------------------------------------------------SEARCH BOX*/
+.search_box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width:fit-content;
+    height: 40px;
+    background-color: #2f3640;
+    border-radius: 20px;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    
+
+    
+}
+.search_text{
+   width: 0px;
+   border: none;
+   outline: none;
+   background: none;
+   float: left;
+   color: white;
+   padding: 0;
+   align-items: center;
+   text-align: center;
+   font-size: 16px;
+   transition: 0.4s;
+   line-height: 40px;
+   
+    
+}
+.search_btn{
+    color: #e84118;
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #2f3640;
+    font-size: 18px;
+
+}
+.search_box:hover > .search_text
+{
+width: 160px;
+}
+.search_box:hover > .search_btn{
+    background-color: aliceblue;
+}
