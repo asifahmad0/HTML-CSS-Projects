@@ -8,9 +8,32 @@
 </head>
 <body>
     <div class="search_box">
-        <input class="search_text" type="text" placeholder="Search Here">
+        <input id="search" oninput="search()" class="search_text" type="text" placeholder="Search Here">
         <button class="search_btn">S</button>
     </div>
-    
+    <ul id="list">
+        <li>laptop screen</li>
+        <li>mobile screen</li>
+        <li>book cover</li>
+        <li>pen</li>
+    </ul>
+    <script>
+        function search(){
+        let input =document.getElementById('search').value.toLowerCase();
+        let list = document.getElementById('list');
+        let items = document.getElementsByTagName('li');
+
+        
+            for(i=0; i<items.length; i++){
+                const item = items[i];
+                const text = item.textContent.toLowerCase();
+                if (text.includes(input)){
+                    item.style.display='block';
+                }else{
+                    item.style.display='none';
+                }
+            }
+        }
+    </script>
 </body>
 </html>

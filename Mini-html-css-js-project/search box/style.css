@@ -58,3 +58,7 @@ width: 160px;
 .search_box:hover > .search_btn{
     background-color: aliceblue;
 }
+
+ul li{
+    display: none;
+}
