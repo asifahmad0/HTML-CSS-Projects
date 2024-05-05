@@ -1,0 +1,155 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --green:#017143;
+    --pink-light:pink;
+    --pink:rgb(238, 94, 118);
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 20px;
+}
+header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+header .logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 50px;
+}
+header .logo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+header ul{
+    position: relative;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+}
+header ul li:nth-child(4){
+    margin-right: 50px;
+}
+header ul li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-weight: 400;
+    color: #333;
+}
+header ul li a.active,
+header ul li a:hover{
+    background: var(--green);
+    color: white;
+}
+.contant{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contant .textBox{
+    position: relative;
+    max-width: 600px;
+
+}
+.contant .textBox h2{
+    color: #333;
+    font-size: 4em;
+    line-height: 1.4em;
+    font-weight: 500;
+}
+.contant.textBox p{
+    color: #333;
+}
+.contant .textBox h2 span{
+    color: var(--green);
+    font-size: 1.2em;
+    font-weight: 900;
+}
+.contant .textBox a{
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: var(--green);
+    padding: 8px 20px;
+    border-radius: 40px;
+    font-weight: 500px;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.contant .imgBox{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+    padding-right: 50px;
+    margin-top: 50px;
+}
+.contant .imgBox .starbucks{
+    max-width: 340px;
+    max-height: 500px;
+}
+
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    display: flex;
+    transform: translateX(-50%);
+}
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.thumb li:hover{
+    transform: translateY(-15px
+    );
+}
+.thumb li img{
+    max-width: 60px;
+}
+.sci{
+    position: absolute;
+    top: 40%;
+    right: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 50px;
+    transform: translateY(-50%);
+    align-items: center;
+    justify-content: center;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(1);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
