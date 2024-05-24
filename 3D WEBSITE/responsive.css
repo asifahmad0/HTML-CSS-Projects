@@ -1,0 +1,28 @@
+
+/*================page1=============*/
+
+@media(max-width:600px){
+    header .headContant{
+        width: 300px;
+        left: 5%;
+    }
+    header .headContant h2{
+        font-size: 2em;
+    }
+}
+
+/*================page2=============*/
+
+@media(max-width:600px){
+    #page2{
+        padding: 3em;
+    }
+    #page2 h2{
+        font-size: 1.5em;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+    #page2 h1{
+        font-size: 1.2rem;
+    }
+}
