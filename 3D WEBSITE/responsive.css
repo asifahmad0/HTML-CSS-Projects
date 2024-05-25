@@ -26,3 +26,44 @@
         font-size: 1.2rem;
     }
 }
+
+/*================page4=============*/
+
+@media(max-width:600px){
+    #page4{
+        padding: 3em;
+    }
+    #page4 h2{
+        font-size: 1.5em;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+    #page4 h1{
+        font-size: 1.2rem;
+    }
+}
+
+/*================page6=============*/
+
+@media(max-width:600px){
+    #page6{
+        padding: 3em;
+    }
+    #page6 h2{
+        font-size: 1.5em;
+        font-weight: 200;
+        margin-bottom: 20px;
+    }
+    #page6 h1{
+        font-size: 1.2rem;
+    }
+}
+
+/*================page7=============*/
+
+@media(max-width:600px){
+    #page7 canvas{
+        object-fit: cover;
+        object-position: center;
+    }
+}

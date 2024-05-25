@@ -1,216 +1,338 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
-:root{
-    --bg:#0b48ed;
-    --text:white;
-    --font:"Pacifico", cursive;
-    --gold:gold;
+:root {
+  --bg: #0b48ed;
+  --text: white;
+  --font: "Pacifico", cursive;
+  --gold: gold;
 }
-#main{
-    position: relative;
-    overflow: hidden;
+#main {
+  position: relative;
+  overflow: hidden;
 }
-#page1{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
+#page1 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
 }
-#page1 video{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -5;
+#page1 video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -5;
 }
-#page1 nav{
-    position: absolute;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid var(--text);
-    z-index: 1;
+#page1 nav {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--text);
+  z-index: 1;
 }
-#page1 nav .left-div{
-    width: 50px;
-    height: 50px;
-    margin-left: 20px;
+#page1 nav .left-div {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
 }
-#page1 nav .left-div img{
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
+#page1 nav .left-div img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 #page1 nav .right-div {
-    height: 100%;
-    margin-right: 20px;
-    display:flex;
-    align-items: center;
-    gap: 20px;
+  height: 100%;
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
-#page1 nav .right-div button{
-    position: relative;
-    padding: 10px 20px;
-    cursor: pointer;
-    background: transparent;
-    border: 2px solid var(--text);
-    border-radius: 50px;
-    color: var(--text);
-    overflow: hidden;
-    
+#page1 nav .right-div button {
+  position: relative;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: transparent;
+  border: 2px solid var(--text);
+  border-radius: 50px;
+  color: var(--text);
+  overflow: hidden;
 }
-#page1 nav .right-div #bookDemo::before{
-    position: absolute;
-    width: 100%;
-    height: 0%;
-    background:var(--text);
-    content: "";
-    inset: 0 0 0 0;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    transition: .3s ease-in-out;
-    opacity: 0;
+#page1 nav .right-div #bookDemo::before {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  background: var(--text);
+  content: "";
+  inset: 0 0 0 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
+  opacity: 0;
 }
-#page1 nav .right-div #bookDemo:hover::before{
-    width: 100%;
-    height: 100%;
-    opacity: 1;
+#page1 nav .right-div #bookDemo:hover::before {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
 }
-#page1 nav .right-div #bookDemo:hover{
-    color: var(--bg);
-    border: none;
+#page1 nav .right-div #bookDemo:hover {
+  color: var(--bg);
+  border: none;
 }
 
 /*========================================Mobile Nave*/
-#page1 ul{
-    position: absolute;
-    width: 200px;
-    height: 500px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background: rgba(14, 41, 192, 0.658);
-    backdrop-filter:blur(5px);
-    top: 10%;
-    right: 0;
-    z-index: 10000;
-    transition: .3s ease-in-out;
-    transform: translateX(200px);
+#page1 ul {
+  position: absolute;
+  width: 200px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: rgba(14, 41, 192, 0.658);
+  backdrop-filter: blur(5px);
+  top: 10%;
+  right: 0;
+  z-index: 10000;
+  transition: 0.3s ease-in-out;
+  transform: translateX(200px);
+}
+#page1 .open {
+  transform: translateX(0px);
+}
+#page1 ul li {
+  width: 100%;
+  height: 50px;
+  list-style: none;
+  text-align: center;
+  font-size: 1.5rem;
+}
 
+#page1 ul li a {
+  text-decoration: none;
+  color: var(--text);
+  padding: 5px 20px;
+  border-radius: 20px;
 }
-#page1 .open{
-    transform: translateX(0px);
-}
-#page1 ul li{
-    width: 100%;
-    height: 50px;
-    list-style: none;
-    text-align: center;
-    font-size: 1.5rem;
-}
-
-#page1 ul li a{
-    text-decoration: none;
-    color: var(--text);
-    padding: 5px 20px;
-    border-radius: 20px;
-}
-#page1 ul li a:hover{
-    color: var(--gold);
-    font-family: cursive;
+#page1 ul li a:hover {
+  color: var(--gold);
+  font-family: cursive;
 }
 
 /*================text on head page*/
-#page1 .headContant{
-    position: absolute;
-    width: 500px;
-    height: 300px;
-    left: 10%;
-    bottom: 5%;
+#page1 .headContant {
+  position: absolute;
+  width: 500px;
+  height: 300px;
+  left: 10%;
+  bottom: 5%;
 }
-#page1 .headContant h2{
-    font-size: 4em;
-    font-weight: 500;
-    color: var(--text);
+#page1 .headContant h2 {
+  font-size: 4em;
+  font-weight: 500;
+  color: var(--text);
 }
-#page1 .headContant p{
-    font-size: 1.2rem;
-    color: var(--text);
-    margin: 20px 0;
+#page1 .headContant p {
+  font-size: 1.2rem;
+  color: var(--text);
+  margin: 20px 0;
 }
 
-#page1 .headContant button{
-    position: relative;
-    cursor: pointer;
-    padding: 10px 25px;
-    color: var(--bg);
-    border-radius: 50px;
-    border: 1px solid var(--text);
-    outline: none;
-    border: none;
-    background: transparent;
-    transition: .2s ease-in-out;
-    overflow: hidden;
+#page1 .headContant button {
+  position: relative;
+  cursor: pointer;
+  padding: 10px 25px;
+  color: var(--bg);
+  border-radius: 50px;
+  border: 1px solid var(--text);
+  outline: none;
+  border: none;
+  background: transparent;
+  transition: 0.2s ease-in-out;
+  overflow: hidden;
 }
-#page1 .headContant button::before{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background:var(--text);
-    content: "";
-    inset: 0 0 0 0;
-    border-radius: 50px;
-    z-index: -1;
-    transition: .3s ease-in-out;
+#page1 .headContant button::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--text);
+  content: "";
+  inset: 0 0 0 0;
+  border-radius: 50px;
+  z-index: -1;
+  transition: 0.3s ease-in-out;
 }
-#page1 .headContant button:hover::before{
-    color: var(--text);
-    width: 0%;
-    height: 0%;
+#page1 .headContant button:hover::before {
+  color: var(--text);
+  width: 0%;
+  height: 0%;
 }
-#page1 .headContant button:hover{
-    border: 1px solid var(--text);
-    color: var(--text);
+#page1 .headContant button:hover {
+  border: 1px solid var(--text);
+  color: var(--text);
 }
 
 /*================page 2 start ===================*/
 
-#page2{
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    background-color: #0a3cce;
-    padding: 5em;
-    overflow: hidden;
-    
+#page2 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  background-color: #0a3cce;
+  padding: 5em;
+  overflow: hidden;
 }
-#page2 h2{
-    font-size: 2em;
-    font-weight: 500;
-    margin-bottom: 50px;
-    color: var(--text);
+#page2 h2 {
+  font-size: 2em;
+  font-weight: 500;
+  margin-bottom: 50px;
+  color: var(--text);
 }
-#page2 h1{
-    font-size: 3em;
-    word-spacing: 5px;
-    color:rgba(161, 158, 158, 0.486);
+#page2 h1 {
+  font-size: 3em;
+  word-spacing: 5px;
+  color: rgba(161, 158, 158, 0.486);
 }
-#page2 h1 span:hover{
-    color: var(--gold);
+#page2 h1 span:hover {
+  color: var(--gold);
+}
+/*===========================page3====================*/
+#page3 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
+}
+/*===========================page4====================*/
+#page4 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 4em;
+  background-color: var(--bg);
+}
+#page4 h2 {
+  color: var(--text);
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+#page4 h1 {
+  font-size: 3em;
+  word-spacing: 5px;
+  color: rgba(161, 158, 158, 0.486);
+}
+#page5 {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--bg);
 }
 
-#page3{
-    position: relative;
+#page6 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 4em;
+  background-color: var(--bg);
+}
+#page6 h2 {
+  color: var(--text);
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+#page6 h1 {
+  font-size: 2rem;
+  word-spacing: 5px;
+  color: rgba(161, 158, 158, 0.486);
+}
+#page7 {
     width: 100vw;
     height: 100vh;
+    background-color: var(--bg);
+  }
+
+  #page7 canvas{
+    position: relative;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+ #page7 .page7-cir{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 9;
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    border: 1px solid #fff;
+}
+ #page7 .page7-cir-inner{
+    height: 70%;
+    width: 70%;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+#page8 {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  background-color: var(--bg);
+}
+#page8 video {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#page8 h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  color: var(--text);
+  z-index: 1;
+  margin-bottom: 10px;
+}
+#page8 button{
+    padding: 10px 20px;
+    background-color: var(--text);
+    color: var(--bg);
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 1;
+    border: 2px solid var(--text);
+    outline: none;
+    margin-bottom: 100px;
+}
+
+#page8 button:hover{
+    background: transparent;
+    border: 2px solid var(--text);
+    color: var(--text);
 }
