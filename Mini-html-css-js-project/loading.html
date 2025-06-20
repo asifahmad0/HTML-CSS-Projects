@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .loader{
+            position: fixed;
+            width: 100dvw;
+            height: 100dvh;
+            top: 0;
+            background: url("image/2.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="loader"></div>
+    <h1>my name is asif ahmad</h1>
+
+    <script>
+        let i = 0;
+        while(i < 10000){
+            console.log(i)
+            i+=1;
+        }
+
+        const fadeOut=() =>{
+            let loader = document.querySelector(".loader");
+            loader.classList.remove('loader')
+        }
+        window.addEventListener('load', fadeOut)
+
+    </script>
+    
+</body>
+</html>
